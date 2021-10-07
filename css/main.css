@@ -43,7 +43,7 @@ header p {
 }
 
 article div {
-  padding: 0rem;
+  padding: 0;
   color: #1e7c74;
   font-style: italic;
 }
@@ -121,13 +121,13 @@ nav i {
   height: 100%;
 }
 
-body main article p :first-child::first-line {
+article p :first-child::first-line {
   color: #1e7c74;
   font-style: italic;
 }
 
 article p {
-  margin: 0rem;
+  margin: 0;
   text-indent: 1.3em;
 }
 
