@@ -43,10 +43,12 @@ header p {
 }
 
 article div {
-  padding: 1rem;
+  padding: 0rem;
+  color: #1e7c74;
+  font-style: italic;
 }
 
-article header {
+main header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,6 +56,10 @@ article header {
   background-image: none;
   border-radius: 0 0 6px 6px;
   color: #fff;
+}
+
+main article {
+  margin: 1rem;
 }
 
 h1 {
@@ -94,7 +100,7 @@ nav a {
 nav a:hover,
 nav a:focus {
   background-color: #1e7c74;
-  outline: .25rem solid #000;
+  outline: .125rem solid #000;
 }
 
 .icon {
@@ -115,22 +121,22 @@ nav i {
   height: 100%;
 }
 
-article p {
-  margin: 0;
-  text-indent: 1.3em;
-}
-
-article div :first-child {
-  text-indent: 0;
-}
-
-article div :first-child::first-line {
+body main article p :first-child::first-line {
   color: #1e7c74;
   font-style: italic;
 }
 
+article p {
+  margin: 0rem;
+  text-indent: 1.3em;
+}
+
+article p :first-child {
+  text-indent: 0;
+}
+
 figure {
-  margin: 1.5rem 0;
+  margin: 1.5rem 1rem;
 }
 
 figure img {
@@ -145,7 +151,7 @@ figcaption {
   text-align: center;
 }
 
-article footer {
+main footer {
   background-color: #259f95;
   background-image: none;
   border-radius: 6px 6px 0 0;
